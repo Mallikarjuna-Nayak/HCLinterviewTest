@@ -1,0 +1,23 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Status</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let resdata of resultData; let i = index">
+        <!--<th scope="row">{{resdata.id}}</th>-->
+        <td>{{i+1}}</td>
+        <td>{{resdata.name}}</td>
+        <td>{{resdata.email}}</td>
+        <td>{{resdata.phone}}</td>
+        <td>{{resdata.status}}</td>
+        <td><a href="edit/{{resdata.id}}" class="btn btn-success">Edit</a> | <button (click) = "deleteRec(resdata)" class="btn btn-info" >Delete</button></td>
+      </tr>
+    </tbody>
+  </table>

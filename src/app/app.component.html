@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="container" style="padding: 50px">
+			<form [formGroup]="form" (ngSubmit)="submitImage()">
+				<div class="form-group">
+					<input type="file" name="fileToUpload" (change)="uploadFile($event)">
+					<button class="btn btn-success btn-block btn-lg btn-block">Upload CSV File</button>
+				</div>
+				
+			</form>
+		</div>
+          <div>
+            <router-outlet></router-outlet>
+          </div>
+    </div>
+</div>

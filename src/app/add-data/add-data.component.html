@@ -1,0 +1,36 @@
+<div class="container">
+	<div class="text-center"><h1>Add New User</h1></div>
+	<div style="width:50%; margin:auto">
+		<form [formGroup]="addForm" novalidate class="form">
+			<div class="row">
+				<div class="col-md-6">Name</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" name="name" formControlName="name">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">Email</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" name="email" formControlName="email">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">Mobile</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" name="phone" formControlName="phone">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">Status</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control" name="status" formControlName="status">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<button class="btn btn-success" (click) = "onSubmit()">Add New User</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
